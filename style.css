@@ -1,0 +1,95 @@
+/* Set basic styles for the page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Style the titles */
+.titles {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Style the game container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ring1 {
+    width: 100px;
+    height: 100px;
+    border: 10px solid red;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 15px;
+    transition: all 0.3s ease-out;
+}
+
+.ring2 {
+    width: 100px;
+    height: 100px;
+    border: 10px solid blue;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 15px;
+    transition: all 0.3s ease-out;
+}
+
+.fail-div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.fail-div label {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.fail-div button {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.fail-div button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
